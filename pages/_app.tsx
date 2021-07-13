@@ -2,6 +2,8 @@ import { UniformTracker } from '@uniformdev/optimize-tracker-react';
 //import Navbar from '../components/Navbar';
 //import Footer from '../components/Footer';
 
+import Navbar2 from '../components/Navbar2';
+
 import '../styles/style.css';
 
 // for locally downloaded intent data and tracker from npm
@@ -29,6 +31,7 @@ export default function UniformConfApp({ Component, pageProps, tracker, scoring 
 
   return (
     <UniformTracker trackerInstance={trackerInstance} initialIntentScores={scoring}>
+      <Navbar2/>
       <Component {...pageProps} />
     </UniformTracker>
   );
