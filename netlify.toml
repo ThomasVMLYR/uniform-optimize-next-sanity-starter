@@ -1,0 +1,16 @@
+[build]
+  command = 'npm run ci:build'
+  publish = 'out'
+
+[template]
+  incoming-hooks = ["Uniform"]
+
+[template.environment]
+  SANITY_PROJECT_ID='Sanity Project ID'
+  SANITY_DATASET='Sanity Dataset Name'
+  UNIFORM_API_KEY='Uniform Optimize API Key'
+  GA_UA_ID='Google Analytics ID (optional)'
+
+# Stores the next cache between builds for faster build time
+[[plugins]]
+  package = "netlify-plugin-cache-nextjs"
