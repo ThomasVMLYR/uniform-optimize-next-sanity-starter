@@ -49,7 +49,7 @@ class MyDocument extends Document<CustomDocumentProps> {
         <Head>
           <meta name="description" content="UniformConf, a Uniform Optimize demo site" />
         </Head>
-        <body className="leading-normal tracking-normal text-white gradient">
+        <body className="leading-normal tracking-normal text-black">
           <Main />
           <script
             id="__UNIFORM_DATA__"
