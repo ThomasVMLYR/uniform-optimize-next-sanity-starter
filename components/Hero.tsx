@@ -17,12 +17,6 @@ const Hero: React.FC<HeroDocument> = (props) => {
             <p className="uppercase tracking-loose w-full">Uniform demo</p>
             <h1 className="my-4 text-5xl font-bold leading-tight">{title}</h1>
             <p className="leading-normal text-2xl mb-8">{description}</p>
-
-            <Link href={'/[[...slug]]'} as={buttonLinkSlug}>
-              <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-                {buttonText}
-              </button>
-            </Link>
           </div>
           <div className="w-full md:w-3/5 py-6 text-center">
             {image && (
@@ -42,3 +36,11 @@ const Hero: React.FC<HeroDocument> = (props) => {
 };
 
 export default Hero;
+/*
+            <Link href={'/[[...slug]]'} as={buttonLinkSlug}>
+              <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">
+                {buttonText}
+              </button>
+            </Link>
+
+            */
