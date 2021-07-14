@@ -23,7 +23,7 @@ export interface PersonalizedHeroFields {
 }
 
 export interface PersonalizedHCampaignFields {
-  /** Hero Options */
+  /** Campaign Options */
   campaignVariations?: CampaignDocument[] | undefined;
 }
 
