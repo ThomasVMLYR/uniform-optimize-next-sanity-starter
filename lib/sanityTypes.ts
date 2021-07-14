@@ -22,7 +22,15 @@ export interface PersonalizedHeroFields {
   heroVariations?: HeroDocument[] | undefined;
 }
 
+export interface PersonalizedHCampaignFields {
+  /** Hero Options */
+  campaignVariations?: HeroDocument[] | undefined;
+}
+
 export type PersonalizedHeroDocument = SanityDocument<PersonalizedHeroFields>;
+
+export type PersonalizedCampaignDocument = SanityDocument<PersonalizedHCampaignFields>;
+
 
 export interface CallToActionFields {
   /** Heading */

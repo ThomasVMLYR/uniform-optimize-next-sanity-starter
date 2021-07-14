@@ -1,6 +1,6 @@
 import { Personalize } from '@uniformdev/optimize-tracker-react';
 import { mapSanityDocumentToPersonalizableItem } from '../lib/optimizeHelpers';
-import { PersonalizedHeroDocument } from '../lib/sanityTypes';
+import { PersonalizedCampaignDocument } from '../lib/sanityTypes';
 import Campaign from './Campaign';
 import Splitter from './Splitter';
 
@@ -25,8 +25,8 @@ const PersonalizedCampaignLoading = () => {
   );
 };
 
-export const PersonalizedHero: React.FC<PersonalizedHeroDocument> = ({ heroVariations }) => {
-  const variations = heroVariations.map(mapSanityDocumentToPersonalizableItem);
+export const PersonalizedCampaign: React.FC<PersonalizedCampaignDocument> = ({ campaignVariations }) => {
+  const variations = campaignVariations.map(mapSanityDocumentToPersonalizableItem);
 
   return (
     <Personalize
