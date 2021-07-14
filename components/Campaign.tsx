@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { useBehaviorTracking } from '@uniformdev/optimize-tracker-react';
 //import Splitter from './Splitter';
-import { HeroDocument } from '../lib/sanityTypes';
+import { CampaignDocument } from '../lib/sanityTypes';
 import { urlFor } from '../lib/sanityHelpers';
 
-const Hero: React.FC<HeroDocument> = (props) => {
+const Campaign: React.FC<CampaignDocument> = (props) => {
   const { title, description, buttonLinkSlug, buttonText, image, unfrmOptIntentTag } = props;
 
   useBehaviorTracking(unfrmOptIntentTag);
@@ -37,7 +37,7 @@ const Hero: React.FC<HeroDocument> = (props) => {
   );
 };
 
-export default Hero;
+export default Campaign;
 /*
             <Link href={'/[[...slug]]'} as={buttonLinkSlug}>
               <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">

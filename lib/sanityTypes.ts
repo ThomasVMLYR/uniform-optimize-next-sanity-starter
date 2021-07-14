@@ -24,7 +24,7 @@ export interface PersonalizedHeroFields {
 
 export interface PersonalizedHCampaignFields {
   /** Hero Options */
-  campaignVariations?: HeroDocument[] | undefined;
+  campaignVariations?: CampaignDocument[] | undefined;
 }
 
 export type PersonalizedHeroDocument = SanityDocument<PersonalizedHeroFields>;
@@ -73,6 +73,30 @@ export interface HeroFields {
 
 export type HeroDocument = SanityDocument<HeroFields>;
 
+
+export interface CampaignFields {
+  /** Title */
+  title: string;
+
+  /** Description */
+  description: string;
+
+  /** Button Text */
+  buttonText?: string | undefined;
+
+  /** image */
+  image?: ImageField | undefined;
+
+  /** Intent Tags */
+  unfrmOptIntentTag?: IntentTags;
+
+  /** Button Link Slug */
+  buttonLinkSlug?: string | undefined;
+}
+
+export type CampaignDocument = SanityDocument<CampaignFields>;
+
+
 export interface PageFields {
   /** Title */
   title?: string | undefined;
@@ -84,6 +108,8 @@ export interface PageFields {
   components?:
     | (
         | CallToActionDocument
+        | CampaignDocument
+        | PersonalizedCampaignDocument
         | HeroDocument
         | PersonalizedHeroDocument
         | RegistrationFormDocument
