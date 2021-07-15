@@ -30,6 +30,7 @@ const componentMapping: ComponentMapping = {
 };
 
 export function Home({ page, talks }: PageProps) {
+  console.log(page);
   return (
     <TalksContext.Provider value={talks}>
       <Head>
