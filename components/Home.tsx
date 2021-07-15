@@ -23,7 +23,7 @@ const componentMapping: ComponentMapping = {
   campaign: MainCampaign,
   callToAction: CallToAction,
   personalizedHero: PersonalizedHero,
-  PersonalizedCampaign: PersonalizedCampaign,
+  personalizedCampaign: PersonalizedCampaign,
   talksList: TalkList,
   registrationForm: RegisterForm,
   whyAttend: WhyAttend,
