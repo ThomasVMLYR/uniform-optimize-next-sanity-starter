@@ -31,6 +31,11 @@ const componentMapping: ComponentMapping = {
 
 export function Home({ page, talks }: PageProps) {
   console.log(page);
+
+  page.components.forEach(function(component) {
+    console.warn(  componentMapping[component._type]  );
+  });
+
   return (
     <TalksContext.Provider value={talks}>
       <Head>
