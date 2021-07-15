@@ -27,7 +27,7 @@ const PersonalizedHeroLoading = () => {
 
 export const PersonalizedHero: React.FC<PersonalizedHeroDocument> = ({ heroVariations }) => {
   const variations = heroVariations.map(mapSanityDocumentToPersonalizableItem);
-
+  console.log(variations);
   return (
     <Personalize
       variations={variations}
