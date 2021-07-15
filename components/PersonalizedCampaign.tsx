@@ -27,7 +27,7 @@ const PersonalizedCampaignLoading = () => {
 
 export const PersonalizedCampaign: React.FC<PersonalizedCampaignDocument> = ({ campaignVariations }) => {
   const variations = campaignVariations.map(mapSanityDocumentToPersonalizableItem);
-
+console.log(variations);
   return (
     <Personalize
       variations={variations}
