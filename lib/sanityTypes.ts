@@ -118,6 +118,7 @@ export interface PageFields {
         | CallToActionDocument
         | CampaignDocument
         | PersonalizedCampaignDocument
+        | PersonalizedCampaignBannerDocument
         | HeroDocument
         | PersonalizedHeroDocument
         | RegistrationFormDocument
