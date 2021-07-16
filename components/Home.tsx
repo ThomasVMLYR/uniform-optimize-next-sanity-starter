@@ -7,6 +7,7 @@ import MainCampaign from '../components/Campaign';
 import CallToAction from '../components/CallToAction';
 import { PersonalizedHero } from '../components/PersonalizedHero';
 import { PersonalizedCampaign } from '../components/PersonalizedCampaign';
+import { PersonalizedCampaignBanner } from '../components/PersonalizedCampaignBanner';
 import { ComponentMapping } from '../lib/ComponentMapping';
 import TalkList from '../components/TalkList';
 import { RegisterForm } from '../components/RegisterForm';
@@ -24,6 +25,7 @@ const componentMapping: ComponentMapping = {
   callToAction: CallToAction,
   personalizedHero: PersonalizedHero,
   personalizedCampaign: PersonalizedCampaign,
+  personalizedCampaignBanner: PersonalizedCampaignBanner,
   talksList: TalkList,
   registrationForm: RegisterForm,
   whyAttend: WhyAttend,
