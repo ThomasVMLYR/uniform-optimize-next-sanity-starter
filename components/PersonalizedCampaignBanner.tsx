@@ -35,8 +35,8 @@ const PersonalizedCampaignBannerLoading = () => {
   );
 };
 
-export const PersonalizedCampaignBanner: React.FC<PersonalizedCampaignBannerDocument> = ({ campaignVariations }) => {
-  const variations = campaignVariations.map(mapSanityDocumentToPersonalizableItem);
+export const PersonalizedCampaignBanner: React.FC<PersonalizedCampaignBannerDocument> = ({ campaignBannerVariations }) => {
+  const variations = campaignBannerVariations.map(mapSanityDocumentToPersonalizableItem);
 console.log(variations);
   return (
     <Personalize

@@ -29,7 +29,7 @@ export interface PersonalizedHCampaignFields {
 
 export interface PersonalizedHCampaignBannerFields {
   /** Campaign Options */
-  campaignVariations?: CampaignDocument[] | undefined;
+  campaignBannerVariations?: CampaignDocument[] | undefined;
 }
 
 export type PersonalizedHeroDocument = SanityDocument<PersonalizedHeroFields>;
