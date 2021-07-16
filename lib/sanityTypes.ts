@@ -27,9 +27,17 @@ export interface PersonalizedHCampaignFields {
   campaignVariations?: CampaignDocument[] | undefined;
 }
 
+export interface PersonalizedHCampaignBannerFields {
+  /** Campaign Options */
+  campaignBannerVariations?: CampaignDocument[] | undefined;
+}
+
 export type PersonalizedHeroDocument = SanityDocument<PersonalizedHeroFields>;
 
 export type PersonalizedCampaignDocument = SanityDocument<PersonalizedHCampaignFields>;
+
+export type PersonalizedCampaignBannerDocument = SanityDocument<PersonalizedHCampaignBannerFields>;
+
 
 
 export interface CallToActionFields {

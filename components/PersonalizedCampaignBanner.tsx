@@ -1,6 +1,6 @@
 import { Personalize } from '@uniformdev/optimize-tracker-react';
 import { mapSanityDocumentToPersonalizableItem } from '../lib/optimizeHelpers';
-import { PersonalizedCampaignDocument } from '../lib/sanityTypes';
+import { PersonalizedCampaignBannerDocument } from '../lib/sanityTypes';
 import CampaignBanner from './CampaignBanner';
 import Splitter from './Splitter';
 
@@ -35,13 +35,13 @@ const PersonalizedCampaignBannerLoading = () => {
   );
 };
 
-export const PersonalizedCampaignBanner: React.FC<PersonalizedCampaignDocument> = ({ campaignVariations }) => {
-  const variations = campaignVariations.map(mapSanityDocumentToPersonalizableItem);
+export const PersonalizedCampaignBanner: React.FC<PersonalizedCampaignBannerDocument> = ({ campaignBannerVariations }) => {
+  const variations = campaignBannerVariations.map(mapSanityDocumentToPersonalizableItem);
 console.log(variations);
   return (
     <Personalize
       variations={variations}
-      trackingEventName="campaignPersonalized"
+      trackingEventName="campaignBannerPersonalized"
       component={CampaignBanner}
       loadingMode={PersonalizedCampaignBannerLoading}
     />
