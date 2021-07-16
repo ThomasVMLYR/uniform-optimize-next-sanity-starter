@@ -63,6 +63,13 @@ export const getPageBySlug = async (preview: boolean, slug: string): Promise<Pag
         	asset->
       	}
       },
+      campaignBannerVariations[]->{
+      	...,
+        image {
+          ...,
+        	asset->
+      	}
+      },
 			image {
         ...,
         asset->
