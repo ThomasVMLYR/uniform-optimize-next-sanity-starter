@@ -1,7 +1,4 @@
 module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
   serverRuntimeConfig: {},
   publicRuntimeConfig: {
     gaTrackingId: process.env.GA_UA_ID,
