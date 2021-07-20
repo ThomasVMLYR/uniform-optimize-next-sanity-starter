@@ -4,7 +4,7 @@ import { UniformTracker } from '@uniformdev/optimize-tracker-react';
 
 import Navbar2 from '../components/Navbar2';
 
-import '../styles/style.css';
+import '../styles/style.scss';
 
 // for locally downloaded intent data and tracker from npm
 import { analytics, localTracker } from '../lib/local-tracker';
